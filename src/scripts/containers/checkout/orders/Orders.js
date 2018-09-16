@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 
+import Order from "../../../component/order/Order";
+
 class Orders extends Component {
     render () {
         return(
-            <div>""</div>
+            <div>
+                <Order />
+                <Order />
+            </div>
         )
     }
 }
