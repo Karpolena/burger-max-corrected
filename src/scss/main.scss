@@ -551,9 +551,7 @@ li {
       padding: 10px;
       box-sizing: border-box;
   }
-  .Input {
-      display: block;
-  } 
+   
 
 @media (min-width: 600px) {
     .ContactData {
@@ -568,6 +566,32 @@ li {
     padding: 10px;
     margin: 10px auto;
     box-sizing: border-box;
+}
+
+.Input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+.InputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.InputElement:focus {
+    outline: none;
+    background-color: #ccc;
 }
 
 

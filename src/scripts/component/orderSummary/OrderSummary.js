@@ -5,13 +5,13 @@ import Aux from "../../hoc/Auxx";
 import Button from "../UI/button/Button"
 
 class OrderSummary extends Component {  
-    // functional component   
+   
     render () {
         const ingredientSummary = Object.keys(this.props.ingredients)
         .map(igKey => {
-            return  <li key={igKey}>
+            return  (<li key={igKey}>
                         <span style={{textTransform: "capitalize"}}>{igKey}</span>: {this.props.ingredients[igKey]} 
-                    </li>
+                    </li>);
         })
         return (
             <Aux>
