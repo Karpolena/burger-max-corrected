@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+
 import BurgerIngredients from "./BurgerIngredients/BurgerIngredients";
 
 const burger = (props) => {
+    console.log(props);
     let transformedIngredients = Object.keys(props.ingredients).map(igKey => {
        
         return [...Array(props.ingredients[igKey])].map((_, i) => {
