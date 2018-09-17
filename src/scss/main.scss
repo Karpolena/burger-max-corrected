@@ -240,6 +240,11 @@ li {
     padding-left: 0;
 }
 
+.Button:disabled {
+    color: #ccc;
+    cursor: not-allowed
+}
+
 .Success {
     color: #5C9210;
 }
@@ -581,7 +586,7 @@ li {
 }
 .InputElement {
     outline: none;
-    border: 1px solid #ccc;
+    border: 1px solid #eee;
     background-color: #fff;
     font: inherit;
     padding: 6px 10px;
@@ -591,7 +596,11 @@ li {
 }
 .InputElement:focus {
     outline: none;
-    background-color: #ccc;
+    background-color: #eee;
+}
+.Invalid {
+    border: 1px solid #f00;
+    background-color: #fda4946b;
 }
 
 
